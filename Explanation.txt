@@ -1,0 +1,87 @@
+Given a binary tree where all the right nodes are either leaf nodes with a sibling (a left node that shares the same parent node) or empty, 
+flip it upside down and turn it into a tree where the original right nodes turned into left leaf nodes. Return the new root.
+
+Input Description:
+First line contains, n, size of binary tree.(2<n<1000)
+Second line contains, values for binary tree.
+
+Output Description:
+Print the tree upside of the given tree.
+
+Sample Input:
+4
+1 2 3 4
+
+Sample Output:
+4__
+   \
+    2
+   / \
+  3   1
+  
+Explanation:
+The given tree is,
+     1
+    / \
+   2   3
+  /
+ 4
+and the upside tree is,
+4__
+   \
+    2
+   / \
+  3   1
+
+Sample Input:
+5
+2 3 1 4 5
+
+Sample Output:
+  4__
+ /   \
+5     3
+     / \
+    1   2
+    
+Sample Input:
+3
+5 3 4
+
+Sample Output:
+  3
+ / \
+4   5
+
+Sample INput:
+4
+7 3 4 5
+
+Sample Output:
+5__
+   \
+    3
+   / \
+  4   7
+
+Sample Input:
+6
+2 7 1 3 4 1
+
+Sample Output:
+  3____
+ /     \
+4       7
+       / \
+      1   2
+     /
+    1
+
+Sample Input:
+3
+9 1 2
+
+Sample Output:
+  1
+ / \
+2   9
